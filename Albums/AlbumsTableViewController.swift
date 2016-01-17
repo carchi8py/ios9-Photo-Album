@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import Photos
 
 class AlbumsTableViewController: UITableViewController {
+    
+    var albumsCollections = PHFetchResult()
+    var assetsCollections = PHAssetCollection()
+    var photoAsset = PHFetchResult()
+    
+    var albumNames = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        albumsCollections = PHAssetCollection.fetchAssetCollectionsWithType(PHAssetCollectionType.Album, subtype: PHAssetCollectionSubtype.Any, options: nil)
+        
+        if albumsCollections.count > 0 {
+            for i in 0...albumsCollections.count - 1 {
+                assetsCollections = albumsCollections[i] as! PHAssetCollection
+                let albumName = assetsCollections.localizedTitle!
+                albumNames.append(albumName)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
