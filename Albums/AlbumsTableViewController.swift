@@ -110,14 +110,21 @@ class AlbumsTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showsAlbums" {
+            let controller: ViewController = segue.destinationViewController as! ViewController
+            let indexPath: NSIndexPath = self.tableView.indexPathForSelectedRow!
+            
+            controller.albumName = albumNames[indexPath.row]
+            assetsCollections = albumsCollections[indexPath.row] as! PHAssetCollection
+            controller.assetsCollection = assetsCollections
+            
+            controller.photoAssets = PHAsset.fetchAssetsInAssetCollection(assetsCollections, options: nil)
+            
+        }
     }
-    */
 
 }

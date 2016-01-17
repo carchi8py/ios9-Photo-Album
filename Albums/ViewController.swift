@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Photos
 
 class ViewController: UIViewController {
+    
+    var albumName: String!
+    var photoAssets: PHFetchResult!
+    var assetsCollection: PHAssetCollection!
 
     override func viewDidLoad() {
         super.viewDidLoad()
