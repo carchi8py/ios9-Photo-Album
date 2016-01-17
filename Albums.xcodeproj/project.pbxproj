@@ -14,6 +14,7 @@
 		27DE3FAE1C4B2F1E002D3914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DE3FAC1C4B2F1E002D3914 /* LaunchScreen.storyboard */; };
 		27DE3FB91C4B2F1E002D3914 /* AlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE3FB81C4B2F1E002D3914 /* AlbumsTests.swift */; };
 		27DE3FC41C4B2F1E002D3914 /* AlbumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE3FC31C4B2F1E002D3914 /* AlbumsUITests.swift */; };
+		27DE3FD21C4B2F60002D3914 /* imagePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DE3FD11C4B2F60002D3914 /* imagePlaceholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		27DE3FBF1C4B2F1E002D3914 /* AlbumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DE3FC31C4B2F1E002D3914 /* AlbumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsUITests.swift; sourceTree = "<group>"; };
 		27DE3FC51C4B2F1E002D3914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DE3FD11C4B2F60002D3914 /* imagePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePlaceholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		27DE3FA21C4B2F1E002D3914 /* Albums */ = {
 			isa = PBXGroup;
 			children = (
+				27DE3FD11C4B2F60002D3914 /* imagePlaceholder.png */,
 				27DE3FA31C4B2F1E002D3914 /* AppDelegate.swift */,
 				27DE3FA51C4B2F1E002D3914 /* ViewController.swift */,
 				27DE3FA71C4B2F1E002D3914 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27DE3FAE1C4B2F1E002D3914 /* LaunchScreen.storyboard in Resources */,
+				27DE3FD21C4B2F60002D3914 /* imagePlaceholder.png in Resources */,
 				27DE3FAB1C4B2F1E002D3914 /* Assets.xcassets in Resources */,
 				27DE3FA91C4B2F1E002D3914 /* Main.storyboard in Resources */,
 			);
