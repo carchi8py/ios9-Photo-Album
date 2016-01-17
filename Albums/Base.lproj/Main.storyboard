@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Title-->
@@ -73,20 +74,60 @@
         <!--My Albums-->
         <scene sceneID="Tc3-WJ-Ktw">
             <objects>
-                <tableViewController id="N1h-SS-LpB" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bIX-Zv-EbR">
+                <tableViewController id="N1h-SS-LpB" customClass="AlbumsTableViewController" customModule="Albums" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" id="bIX-Zv-EbR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Nu5-Ll-MpB">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="125" id="Nu5-Ll-MpB" customClass="AblumsTableViewCell" customModule="Albums" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nu5-Ll-MpB" id="MLj-Xl-3aL">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="124.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-pr-Dof">
+                                            <rect key="frame" x="8" y="13" width="125" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="cYZ-hu-0qm"/>
+                                                <constraint firstAttribute="width" constant="125" id="oug-fz-9Lc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nqt-jN-UKe">
+                                            <rect key="frame" x="141" y="52" width="418" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="wRf-cV-LLK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu8-Xv-3sf">
+                                            <rect key="frame" x="141" y="95" width="418" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="A7d-m7-Vgk"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Nqt-jN-UKe" firstAttribute="leading" secondItem="8gQ-pr-Dof" secondAttribute="trailing" constant="8" id="4Ma-bE-PX1"/>
+                                        <constraint firstItem="eu8-Xv-3sf" firstAttribute="trailing" secondItem="Nqt-jN-UKe" secondAttribute="trailing" id="B7G-EY-VWd"/>
+                                        <constraint firstItem="eu8-Xv-3sf" firstAttribute="baseline" secondItem="8gQ-pr-Dof" secondAttribute="baseline" id="KVT-jd-aPr"/>
+                                        <constraint firstItem="Nqt-jN-UKe" firstAttribute="centerY" secondItem="8gQ-pr-Dof" secondAttribute="centerY" id="NtU-C7-zDx"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Nqt-jN-UKe" secondAttribute="trailing" id="WkZ-aO-Plp"/>
+                                        <constraint firstItem="8gQ-pr-Dof" firstAttribute="centerY" secondItem="MLj-Xl-3aL" secondAttribute="centerY" id="eRC-2s-7Yd"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="8gQ-pr-Dof" secondAttribute="leading" id="pDV-ft-62W"/>
+                                        <constraint firstItem="eu8-Xv-3sf" firstAttribute="leading" secondItem="8gQ-pr-Dof" secondAttribute="trailing" constant="8" id="v8j-xC-fOo"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="albumCount" destination="eu8-Xv-3sf" id="cuX-6y-GUU"/>
+                                    <outlet property="albumImage" destination="8gQ-pr-Dof" id="Gwp-4Y-1X2"/>
+                                    <outlet property="albumName" destination="Nqt-jN-UKe" id="tS6-z0-0c7"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="showAlbums" id="gAZ-MH-1oS"/>
                                 </connections>
                             </tableViewCell>
