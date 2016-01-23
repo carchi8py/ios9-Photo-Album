@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tDz-0R-FKf">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tDz-0R-FKf">
                                 <rect key="frame" x="191" y="201" width="240" height="128"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ROi-j5-SJp">
                                     <size key="itemSize" width="50" height="50"/>
@@ -34,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeO-JX-RJH">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeO-JX-RJH">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 </imageView>
                                             </subviews>
@@ -59,6 +59,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tDz-0R-FKf" secondAttribute="bottom" id="OFs-8r-wIC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tDz-0R-FKf" secondAttribute="trailing" constant="-20" id="XZs-R5-pgx"/>
+                            <constraint firstItem="tDz-0R-FKf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="mZ3-Si-DZM"/>
+                            <constraint firstItem="tDz-0R-FKf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ssE-Ku-Vyk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Yeq-Yl-iFf"/>
                     <connections>

@@ -21,6 +21,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
 
         self.navigationItem.title = albumName
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,6 +50,25 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
         }
         return cell
+    }
+    
+    //Mark Collection View Cells Layout
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width = self.view.frame.width
+        //2 is the spacing between cell
+        //3 is the space inbetween 3 cells
+        let sizeDimension = (width - 2  * 3) / 3
+        
+        return CGSizeMake(sizeDimension, sizeDimension)
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 2.0
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 2.0
     }
 
 
