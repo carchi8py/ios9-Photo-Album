@@ -18,6 +18,7 @@
 		27DE3FD41C4B32BE002D3914 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE3FD31C4B32BE002D3914 /* AlbumsTableViewController.swift */; };
 		27DE3FD61C4B32D5002D3914 /* AblumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE3FD51C4B32D5002D3914 /* AblumsTableViewCell.swift */; };
 		27E711DC1C542400009869A3 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E711DB1C542400009869A3 /* AlbumCollectionViewCell.swift */; };
+		27E711DE1C54289C009869A3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E711DD1C54289C009869A3 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		27DE3FD31C4B32BE002D3914 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		27DE3FD51C4B32D5002D3914 /* AblumsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AblumsTableViewCell.swift; sourceTree = "<group>"; };
 		27E711DB1C542400009869A3 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		27E711DD1C54289C009869A3 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				27DE3FAF1C4B2F1E002D3914 /* Info.plist */,
 				27DE3FD31C4B32BE002D3914 /* AlbumsTableViewController.swift */,
 				27DE3FD51C4B32D5002D3914 /* AblumsTableViewCell.swift */,
+				27E711DD1C54289C009869A3 /* ImageViewController.swift */,
 			);
 			path = Albums;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				27DE3FD41C4B32BE002D3914 /* AlbumsTableViewController.swift in Sources */,
 				27DE3FA41C4B2F1E002D3914 /* AppDelegate.swift in Sources */,
 				27DE3FD61C4B32D5002D3914 /* AblumsTableViewCell.swift in Sources */,
+				27E711DE1C54289C009869A3 /* ImageViewController.swift in Sources */,
 				27E711DC1C542400009869A3 /* AlbumCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

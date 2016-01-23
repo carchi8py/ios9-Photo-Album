@@ -78,7 +78,7 @@
         <!--Image-->
         <scene sceneID="QHE-ao-M7P">
             <objects>
-                <viewController id="03d-9H-vfC" sceneMemberID="viewController">
+                <viewController id="03d-9H-vfC" customClass="ImageViewController" customModule="Albums" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2g8-k7-CPp"/>
                         <viewControllerLayoutGuide type="bottom" id="tz6-Da-g0d"/>
@@ -86,11 +86,25 @@
                     <view key="view" contentMode="scaleToFill" id="Se2-AI-PNv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQX-HS-Zkj">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tz6-Da-g0d" firstAttribute="top" secondItem="DQX-HS-Zkj" secondAttribute="bottom" id="Ot9-dz-LBO"/>
+                            <constraint firstItem="DQX-HS-Zkj" firstAttribute="leading" secondItem="Se2-AI-PNv" secondAttribute="leadingMargin" id="XvM-FT-Cim"/>
+                            <constraint firstItem="DQX-HS-Zkj" firstAttribute="top" secondItem="2g8-k7-CPp" secondAttribute="bottom" id="eVQ-Rr-lIl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DQX-HS-Zkj" secondAttribute="trailing" id="nIV-bU-ORs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Image" id="Ylc-FS-CSL">
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="trash" id="Uw2-ZD-4RV"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="DQX-HS-Zkj" id="hKn-sP-z67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRn-nS-p9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

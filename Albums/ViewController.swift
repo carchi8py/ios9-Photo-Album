@@ -70,6 +70,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
         return 2.0
     }
+    
+    //Mark: -- Seque
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showImage" {
+            let controller: ImageViewController = segue.destinationViewController as! ImageViewController
+            controller.index = self.collectionView.indexPathForCell(sender as! UICollectionViewCell)!.item
+            
+            controller.assetFetchResult = self.photoAssets
+            controller.assetCollection = self.assetsCollection
+        }
+    }
 
 
 }
