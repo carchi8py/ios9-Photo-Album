@@ -48,7 +48,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="aeO-JX-RJH" id="Ncs-Vp-k9N"/>
-                                            <segue destination="03d-9H-vfC" kind="show" identifier="showImages" id="Bdu-Uy-CNM"/>
+                                            <segue destination="03d-9H-vfC" kind="show" identifier="showImage" id="Bdu-Uy-CNM"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
