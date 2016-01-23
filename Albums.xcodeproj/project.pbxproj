@@ -17,6 +17,7 @@
 		27DE3FD21C4B2F60002D3914 /* imagePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DE3FD11C4B2F60002D3914 /* imagePlaceholder.png */; };
 		27DE3FD41C4B32BE002D3914 /* AlbumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE3FD31C4B32BE002D3914 /* AlbumsTableViewController.swift */; };
 		27DE3FD61C4B32D5002D3914 /* AblumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE3FD51C4B32D5002D3914 /* AblumsTableViewCell.swift */; };
+		27E711DC1C542400009869A3 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E711DB1C542400009869A3 /* AlbumCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		27DE3FD11C4B2F60002D3914 /* imagePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePlaceholder.png; sourceTree = "<group>"; };
 		27DE3FD31C4B32BE002D3914 /* AlbumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewController.swift; sourceTree = "<group>"; };
 		27DE3FD51C4B32D5002D3914 /* AblumsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AblumsTableViewCell.swift; sourceTree = "<group>"; };
+		27E711DB1C542400009869A3 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				27DE3FA31C4B2F1E002D3914 /* AppDelegate.swift */,
 				27DE3FA51C4B2F1E002D3914 /* ViewController.swift */,
 				27DE3FA71C4B2F1E002D3914 /* Main.storyboard */,
+				27E711DB1C542400009869A3 /* AlbumCollectionViewCell.swift */,
 				27DE3FAA1C4B2F1E002D3914 /* Assets.xcassets */,
 				27DE3FAC1C4B2F1E002D3914 /* LaunchScreen.storyboard */,
 				27DE3FAF1C4B2F1E002D3914 /* Info.plist */,
@@ -270,6 +273,7 @@
 				27DE3FD41C4B32BE002D3914 /* AlbumsTableViewController.swift in Sources */,
 				27DE3FA41C4B2F1E002D3914 /* AppDelegate.swift in Sources */,
 				27DE3FD61C4B32D5002D3914 /* AblumsTableViewCell.swift in Sources */,
+				27E711DC1C542400009869A3 /* AlbumCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +500,7 @@
 				27DE3FCA1C4B2F1E002D3914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27DE3FCB1C4B2F1E002D3914 /* Build configuration list for PBXNativeTarget "AlbumsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				27DE3FCD1C4B2F1E002D3914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27DE3FCE1C4B2F1E002D3914 /* Build configuration list for PBXNativeTarget "AlbumsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				27DE3FD01C4B2F1E002D3914 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
